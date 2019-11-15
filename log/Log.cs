@@ -47,7 +47,7 @@ namespace MyCommon.log
             }
             catch (Exception ex)
             {
-                //log.Log.WriteLog(ex.ToString());
+                //log.Log.WriteLog(ex.ToString());;
                 WriteSystemError(ex.ToString());
             }
         }

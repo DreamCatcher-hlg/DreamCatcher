@@ -34,7 +34,6 @@ namespace MyChat
 
         static void CurrentDomain_UnhandledException(object sender, UnhandledExceptionEventArgs e)
         {
-            //throw new NotImplementedException();
             string error = GetExceptionMsg(e.ExceptionObject as Exception, e.ToString());
             MyCommon.log.Log.WriteSystemError(error);
             MessageBox.Show(error);
@@ -42,7 +41,6 @@ namespace MyChat
 
         static void Application_ThreadException(object sender, System.Threading.ThreadExceptionEventArgs e)
         {
-            //throw new NotImplementedException();
             string error = GetExceptionMsg(e.Exception, e.ToString());
             MyCommon.log.Log.WriteLog(error);
         }
